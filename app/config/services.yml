@@ -13,4 +13,4 @@ services:
 
     api.haveibeenpwnd:
       class: AppBundle\Services\HaveIBeenPwnd
-      arguments: ['%haveibeenpwnd_baseurl%', '%haveibeenpwnd_version%','%haveibeenpwnd_useragent%', '@wrapper.guzzle']
+      arguments: ['%haveibeenpwnd_baseurl%', '%haveibeenpwnd_version%','%haveibeenpwnd_useragent%', '@wrapper.guzzle', '@doctrine.orm.default_entity_manager']
